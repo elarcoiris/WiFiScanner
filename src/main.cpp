@@ -3,17 +3,14 @@
 #include <ESP8266WiFi.h>
 #include <keys.h>
 
-char ssid[] = SSID;
-char password[] = PASSWORD;
-
 void setup() {
   Serial.begin(115200);
-  int status = WiFi.begin(ssid, password);
+  int status = WiFi.begin(SSID, PASSWORD);
   if (status != WL_CONNECTED) {
     // wait 10 seconds for connection:
     Serial.print("Attempting to connect to SSID: ");
-    Serial.println(ssid);
-    status = WiFi.begin(ssid, password);
+    Serial.println(SSID);
+    status = WiFi.begin(SSID, PASSWORD);
     delay(10000);
 
     Serial.print("Currently connected to SSID: ");

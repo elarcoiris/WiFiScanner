@@ -1,9 +1,10 @@
 #include <Arduino.h>
 #include <SPI.h>
 #include <ESP8266WiFi.h>
+#include <keys.h>
 
-char ssid[] = "";
-char password[] = "";
+char ssid[] = SSID;
+char password[] = PASSWORD;
 
 void setup() {
   Serial.begin(115200);
@@ -20,7 +21,6 @@ void setup() {
     
     IPAddress ip = WiFi.localIP();
     Serial.print("IP Address: ");
-    Serial.println(ip);
     Serial.println(ip);
 
     IPAddress gateway = WiFi.gatewayIP();

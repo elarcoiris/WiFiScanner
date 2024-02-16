@@ -7,7 +7,7 @@ Connect to WPA password enabled networks.
 1. Open the folder in VSCode, after you've installed the PlatformIO extension.</br>
 2. Connect your module's programmer to your computer (ensure the correct USB port is selected & baud rate).</br>
 3. Build and upload your code.</br>
-4. Monitor the output in Serial Monitor.</br>
+4. Monitor the output in Serial Monitor.</br></br>
 ![Serial monitor output](/images/SerialMonitor.png)
 
 ### Arduino IDE
